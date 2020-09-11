@@ -7,7 +7,7 @@ class Institucion(models.Model):
     nombre   =    models.CharField(max_length=120, blank=False)
     cue =   models.CharField(max_length=120, blank=False, null=False)
     domicilio = models.CharField(max_length=120, blank=False)
-    telefono =  models.IntegerField(max_length=20, blank=False)
+    telefono =  models.PositiveIntegerField(default=1, blank=False)
     email = models.EmailField()
     facebook =  models.CharField(max_length=120)
     modalidad = models.CharField(max_length=120)
